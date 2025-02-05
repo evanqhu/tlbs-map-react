@@ -9,7 +9,7 @@ interface ArcProps {
   /**
    * 弧线图数据
    */
-  data: CustomArcLine[];
+  data?: CustomArcLine[];
   /**
    * 弧线模式
    */
@@ -21,12 +21,12 @@ interface ArcProps {
   [key: string]: any;
 }
 
-const ArcComponent: FC<ArcProps> = React.forwardRef((props, ref) => {
+const ArcComponent: FC<ArcProps> = React.forwardRef((props: ArcProps, ref) => {
   const {
     data = [],
     mode,
     options = {},
-  }: ArcProps = props;
+  } = props as ArcProps;
 
   const {
     pickStyle,

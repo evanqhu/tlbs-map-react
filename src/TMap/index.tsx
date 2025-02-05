@@ -142,7 +142,7 @@ const TMapComponent: React.FC<TMapProps> = React.forwardRef((props, ref) => {
     duration = 500,
     options = {},
     children,
-  }: TMapProps = props;
+  } = props as TMapProps;
   const {
     center = { lat: 40.0404, lng: 116.2735 },
     zoom = 12,

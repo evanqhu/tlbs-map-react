@@ -6,7 +6,7 @@ export default defineConfig({
   publicPath: '/web/tlbs-map-react/',
   outputPath: 'docs-dist',
   history: {
-    type: 'hash',
+    type: 'browser',
   },
   // 主题配置
   themeConfig: {
@@ -87,5 +87,9 @@ export default defineConfig({
         }
       }
     `,
-  ]
+  ],
+  // 打包工具
+  mako: {
+
+  }
 });

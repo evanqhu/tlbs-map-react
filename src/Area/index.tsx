@@ -25,7 +25,7 @@ const AreaComponent: FC<AreaProps> = React.forwardRef((props, ref) => {
     data = [],
     styles,
     options = {},
-  }: AreaProps = props;
+  } = props as AreaProps;
 
   const {
     selectOptions,
